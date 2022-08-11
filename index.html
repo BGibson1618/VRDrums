@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			h1{text-align: center;}
+			/*h2{text-align: center;}*/
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -22,40 +26,90 @@
 							<p class="major"></p>
 							<ul class="actions stacked">
 								<li>
-									<a href="#first" class="button medium wide smooth-scroll-middle">Introduction</a>
-									<a href="#second" class="button medium wide smooth-scroll-middle">Tech Used</a>
-									<a href="#third" class="button medium wide smooth-scroll-middle">Skills Learned</a>
+									<a href="#intro" class="button medium wide smooth-scroll-middle">Introduction</a>
+									<a href="#about" class="button medium wide smooth-scroll-middle">About</a>
+									<a href="#tech" class="button medium wide smooth-scroll-middle">Tech Used</a>
 								</li>
 								<li>
-									<a href="#fourth" class="button medium wide smooth-scroll-middle">Gallery</a>
-									<a href="#fifth" class="button medium wide smooth-scroll-middle">Current Work</a>
-									<a href="#sixth" class="button medium wide smooth-scroll-middle">The Team</a>
+									<a href="#skills" class="button medium wide smooth-scroll-middle">Skills Learned</a>
+									<a href="#pics" class="button medium wide smooth-scroll-middle">Gallery</a>
+									<a href="#todo" class="button medium wide smooth-scroll-middle">Current Work</a>
 								</li>
+								<li><a href="#team" class="button medium wide smooth-scroll-middle">The Team</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Introduction -->
-					<section class="spotlight style1 orient-center content-align-center" id="first">
+					<section class="spotlight style1 orient-center content-align-left" id="intro">
 						<div class="content">
 							<h1>Introduction</h1>
-							<p>
-								While this began as a senior project from my time at Cal State, Northridge, it has
-								evolved into a personal endeavor that I continue to work on.
-
-
-								<br>The VR Drums project was created as an educational music tool in
-							mind. This software aims to teach basic drumming techniques without the hassle of having to
-							invest in drum kits and expensive lessons. Users can also learn and practice drums quietly
-							without disturbing the peace around them. The game is loaded with various features the first
-							being Tutorial Mode which aims to teach users how to sight-read sheet music to learn rhythm
-							patters on time with a metronome, Play Along mode that allows people to play with their
-							favorite songs, and Freeplay Mode where users can play with the drums freely. </p>
+							<p>The benefits of music education, especially for children, are numerous. Time and again,
+								research shows that learning to play an instrument and read music is correlated with
+								improved hand-eye-coordination, pattern recognition, and problem-solving skills.
+								Unfortunately, music and arts are often the first things that get cut from the
+								curriculum when a school district finds itself short on funding. The VR Drums project
+								endeavors to solve this problem by offering a tool for music
+								education that	is cheap, silent, and, most importantly, effective.</p>
+							<p>We intend to achieve this by creating a virtualized instrument with enough realism
+								that the user can learn skills that will translate to the real world, and then
+								immersing that instrument in a virtual environment that contains all the tools
+								necessary to practice one's technique, timing, and music literacy. Recent
+								advancements in the field have yielded powerful virtual reality technology at
+								affordable prices. By keeping our software lightweight enough to run on a standalone
+								VR rig, we believe we can make music education accessible at almost any budget.</p>
+							<p>While this began as a senior project from my time at Cal State, Northridge, it has
+								evolved into a personal venture that I continue to work on.</p>
 						</div>
 					</section>
-					
+
+					<section class="spotlight style1 orient-center content-align-left" id="about">
+						<div class="content">
+							<h1>About</h1>
+							<p>
+								The application provides the user with an eight-piece drum kit rendered in a VR
+								space. A pair of virtual drum sticks tracks the user's hand movements, and colliders
+								on each of the drum objects will produce a sound any time the head of a drum stick
+								crosses the surface of a drum head. The pitch of the tone produced will vary slightly
+								depending on where the collision occurs. The virtual pedals of the hi-hat and bass
+								drums are engaged when the user pulls the trigger on their left and right controller,
+								respectively. The other objects in the scene are determined by which of the three
+								play modes is currently active as described below.
+							</p>
+							<h2 style="text-align:center;">Free Play</h2>
+							<p>
+								In Free Play mode, it's just the user, his drums, and the open sky. There are no
+								rules here.
+							</p>
+							<h2 style="text-align:center;">Play Along</h2>
+							<p>
+								Play Along provides a simple music player which allows the user to listen to locally
+								saved song files while they jam along
+							</p>
+							<h2 style="text-align:center;">Tutorial Mode</h2>
+							<p>
+								The heart of the VR Drums can be found in Tutorial Mode. In this mode, the drum
+								heads are given colors and the user has
+								a large, lined board centered in his field of view matching the format used in drum
+								music notation. When the user presses the play button, game objects representing
+								musical notes begin instantiating on the right side of the board and move left
+								as if the user were reading a page of sheet music. Additionally, the notes are color
+								coded to the drum they represent. For example, the top line of the clef represents the
+								hi-hat, and so the notes that spawn on that line are the same color as the hi-hat
+								itself. At the left of the board is a vertical bar which cues the user as to when a
+								note is meant to be played. When the user strikes a drum object, the distance the
+								note and target bar is measured to determine how accurate the user's timing is, and a
+								score is generated based on their precision. Is the music going too fast? Just to the
+								right of the drum set is a selector box where the user can adjust the tempo. </p>
+							<p>We believe this
+								combination	of features
+								provides the user with an environment in which they can learn to sight-read sheet
+								music, practice their technique, and improve their rhythm all at the same time.
+							</p>
+						</div>
+					</section>
 				<!-- Tech Used -->
-					<section class="spotlight style1 orient-center content-align-center" id="second">
+					<section class="spotlight style1 orient-center content-align-left" id="tech">
 						<div class="content">
 							<h1>Technologies Used</h1>
 						</div>
@@ -109,7 +163,7 @@
 					</section>
 					
 				<!--Skills Used-->
-					<section class="spotlight style1 orient-center content-align-center" id="third">
+					<section class="spotlight style1 orient-center content-align-left" id="skills">
 						<div class="content">
 							<h1>Skills</h1>
 							<p>In order to make the AR-Drums a reality, our team has had to become proficient in Blender
@@ -123,7 +177,7 @@
 						</div>
 					</section>	
 				<!-- Gallery Showcase -->
-					<section class="wrapper style1 align-center" id="fourth">
+					<section class="wrapper style1 align-center" id="pics">
 						<div class="inner">
 							<h2>Gallery Showcase</h2>
 							<p></p>
@@ -239,12 +293,11 @@
 										
 									</div>
 								</article>
-								
 						</div>
 					</section>
 
 				<!-- Credits -->
-					<section class="wrapper style1 align-center" id="sixth">
+					<section class="wrapper style1 align-center" id="team">
 						<div class="inner">
 							<h2>AR-Drums Team Members</h2>
 							<p></p>
