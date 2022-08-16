@@ -27,11 +27,11 @@
 								<li>
 									<a href="#intro" class="button medium wide smooth-scroll-middle">Introduction</a>
 									<a href="#about" class="button medium wide smooth-scroll-middle">About</a>
-									<a href="#tech" class="button medium wide smooth-scroll-middle">Tech Used</a>
+									<a href="#pics" class="button medium wide smooth-scroll-middle">Gallery</a>
 								</li>
 								<li>
 									<a href="#skills" class="button medium wide smooth-scroll-middle">Skills Learned</a>
-									<a href="#pics" class="button medium wide smooth-scroll-middle">Gallery</a>
+									<a href="#tech" class="button medium wide smooth-scroll-middle">Tech Used</a>
 									<a href="#todo" class="button medium wide smooth-scroll-middle">Future Work</a>
 								</li>
 								<li><a href="#team" class="button medium wide smooth-scroll-middle">The Team</a></li>
@@ -50,12 +50,14 @@
 								curriculum when a school district finds itself short on funding. The VR Drums project
 								endeavors to solve this problem by offering a tool for music
 								education that	is cheap, silent, and, most importantly, effective.</p>
-							<p>We intend to achieve this by creating a virtualized instrument with enough realism
-								that the user can learn skills that will translate to the real world and then
-								surrounding that instrument with a virtual environment that contains all the tools
-								necessary to practice one's technique, timing, and music literacy. Recent
-								advancements in the field have yielded powerful virtual reality technology at
-								affordable prices. By keeping our software lightweight enough to run on a standalone
+							<p>We intend to achieve this by embedding a virtualized instrument
+								in an environment that contains all the tools
+								necessary to practice one's technique, timing, and music literacy. We believe that by
+								achieving a sufficient level of realism any skills learned in the virtual environment
+								will translate to a physical drum set and vice-versa.
+								Recent
+								advancements in the field have yielded powerful virtual reality hardware at
+								affordable prices. By keeping our application lightweight enough to run on a standalone
 								VR rig, we believe we can make music education accessible at almost any budget.</p>
 							<p>While this began as a senior project from my time at Cal State, Northridge, it has
 								evolved into a personal venture that I continue to improve.</p>
@@ -70,11 +72,11 @@
 								The application provides the user with an eight-piece drum kit rendered in a VR
 								space. A pair of virtual drum sticks tracks the user's hand movements, and colliders
 								on each of the drum objects will produce a sound any time the head of a drum stick
-								crosses the surface of a drum head. The pitch of the sound will vary slightly
+								crosses the surface of a drum head. The pitch of the sound varies slightly
 								depending on where the collision occurs. The virtual pedals of the hi-hat and bass
 								drums are engaged when the user pulls the trigger on their left and right controller,
 								respectively. The other objects in the scene are determined by which of the three
-								play modes is currently active as described below.
+								play modes is currently active, as described below.
 							</p>
 						</div>
 					</section>
@@ -118,8 +120,9 @@
 								coded to the drum they represent. For example, the top line of the clef represents the
 								hi-hat, and so the notes that spawn on that line are the same color as the hi-hat
 								itself. At the left of the board is a vertical bar which cues the user as to when a
-								note is meant to be played. When the user strikes a drum object, the distance the
-								note and target bar is measured to determine how accurate the user's timing is, and a
+								note is meant to be played. When the user strikes a drum object, the distance between
+								the
+								note and target bar is measured to determine how accurate the user's timing is. A
 								score is generated based on their precision. Is the music going too fast? Just to the
 								right of the drum set is a selector box where the user can adjust the tempo. </p>
 						</div>
@@ -140,97 +143,6 @@
 							</p>
 						</div>
 					</section>
-
-				<!-- Tech Used -->
-					<section class="spotlight style1 orient-center content-align-left" id="tech">
-						<div class="content">
-							<h1>Technologies Used</h1>
-						</div>
-					</section>					
-					
-				<!-- Tech Used 1 -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center">
-						<div class="content">
-							<h2>Built With Unity 3D</h2>
-							<p>Unity is a cross-platform game engine used for developing applications as simple as 2D
-								mobile platformers or as complex as fully immersive VR experiences.
-							</p>
-							<ul class="actions stacked">
-								<li><a href="https://unity.com/" class="button">Learn More About Unity</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/unity.jpg" alt="Unity" />
-						</div>
-					</section>
-
-				<!-- Tech Used 2 -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center">
-						<div class="content">
-							<h2>GameObjects Created Using Blender</h2>
-							<p>Blender is an open-sourced 3D computer graphics software used for animation, visual FX,
-								art, 3D models, virtual reality, and video games. </p>
-							<ul class="actions stacked">
-								<li><a href="https://www.blender.org/" class="button">Learn More About Blender</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/blender.jpg" alt="Blender" />
-						</div>
-					</section>
-					
-				<!-- Tech Used 3 -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center">
-						<div class="content">
-							<h2>Integrated With OpenXR</h2>
-							<p>Open XR is an open-sourced plugin that allows development support for various augmented
-							and virtual reality head mounted displays. This includes integration for hardware
-							developed by HTC, Oculus, and more.</p>
-							<ul class="actions stacked">
-								<li><a href="https://www.khronos.org/openxr/" class="button">Learn More About
-									OpenXR</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/openXR.jpg" alt="Open XR" />
-						</div>
-					</section>
-
-					<section class="spotlight style1 orient-left content-align-left image-position-center">
-						<div class="content">
-							<h2>Tested on Quest 2</h2>
-							<p>
-								The Meta Quest 2 (formerly known as Oculus) is a virtual reality platform that can
-								operate either as a standalone device using its onboard processor to run applications
-								or as a peripheral linked to a gaming PC. With a thriving community of developers and
-								cutting edge motion tracking, the Quest 2 offers everything a consumer enthusiast
-								could need.
-							</p>
-								<a href="https://store.facebook.com/quest/products/quest-2" class="button">Learn More
-								   About Meta Quest 2</a>
-						</div>
-						<div class="image">
-							<img src="images/quest2.jpg" alt="Meta Quest 2">
-						</div>
-					</section>
-					
-				<!--Skills Used-->
-					<section class="spotlight style1 orient-center content-align-left" id="skills">
-						<div class="content">
-							<h1>Skills</h1>
-							<p>In order to make VR Drums a reality, our team has had to become proficient in Blender
-							to make our custom game objects, Unity to create the basics of the application and the user
-							interface, and OpenXR so that our software could run on the most popular VR platforms
-							currently available. Additionally, in order to create an environment that could be truly
-							effective in terms of music education, our skill sets had to expand into the realms of
-								musical
-							time signatures, converting between the relative time of musical tempo and the absolute
-							time of beats per minute, and translating sheet music into a text format that could be
-							processed by Unity.</p>
-						</div>
-					</section>
-
-
 
 				<!-- Gallery Showcase -->
 					<section class="wrapper style1 align-center" id="pics">
@@ -322,6 +234,134 @@
 						</div>
 					</section>
 
+				<!--Skills Used-->
+					<section class="spotlight style1 orient-center content-align-left" id="skills">
+						<div class="content">
+							<h1>Skills</h1>
+							<p>
+								When this project began, only a few members of the group had experience with Unity,
+								and none of us had any experience with programming for virtual reality. As project
+								lead, I identified six areas in which my team would need to become proficient:
+								<ul>
+									<li>Designing custom game objects</li>
+									<li>Building a user interface in a VR space</li>
+									<li>Incorporating audio files in a way that gives the drum set a realistic
+										sound</li>
+									<li>Learning to use the Open XR standard and integrating VR hardware input
+										devices</li>
+									<li>Translating sheet music notation into a text file that could serve as an
+										input for Tutorial Mode</li>
+									<li>Integrating all of the above to create a fun and engaging application</li>
+								</ul>
+								My fantastic group mates took on the challenges of learning to use Blender to create
+								realistic looking drums, sourcing sound clips, understanding how user interfaces are
+								different in VR, and devising a system for converting sheet music into usable text
+								files. That left me the tasks of learning Open XR and creating a cohesive program out
+								of the assets my team created.
+							</p>
+							<p>
+								While Unity is known for having a thriving community of developers and excellent online
+								documentation, learning to use Khronos's Open XR standard proved to be quite the
+								challenge. The standard was so new at the time that I often found myself reading
+								documentation or following tutorials that were out of date despite only being a few
+								months old. There were times when I considered developing this project strictly for
+								the Quest 2 and following Oculus's documentation, but ultimately I decided that
+								cross-platform compatibility was an essential aspect of the project and stuck with
+								Open XR. I am happy to have some experience with the standard as it seems to be the
+								future of VR and AR development
+							</p>
+							<p>
+								Integrating assets between multiple programmers during a time of remote learning was
+								unexpectedly complex as well. Of the six members in the group, only two
+								of us had access to VR rigs and PC's capable of running them. This meant that the
+								majority of the group was trying to develop assets for a virtual reality application
+								without being able to test them in VR. In an effort to find ways for my team to be
+								productive despite the obstacles caused by the pandemic, I learned	how	to create
+								custom templates in	Unity and how to use the XR Device Simulator. I made a template
+								with the Universal Render Pipeline enabled and which contained XR Origin and XR Device
+								Simulator prefabs. I then helped my team install the template on their individual
+								computers. My teammates without VR rigs could use the XR Device Simulator to move
+								around the VR environment and interact with VR assets, and my teammates with VR rigs
+								could simply disable the simulator and use their hardware as normal. While this is
+								more of a leadership success story than one of programming proficiency, I did become
+								more familiar with Unity and Open XR in the process.
+							</p>
+						</div>
+					</section>
+
+				<!-- Tech Used -->
+					<section class="spotlight style1 orient-center content-align-left" id="tech">
+						<div class="content">
+							<h1>Technologies Used</h1>
+						</div>
+					</section>					
+					
+				<!-- Tech Used 1 -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center">
+						<div class="content">
+							<h2>Built With Unity 3D</h2>
+							<p>Unity is a cross-platform game engine used for developing applications as simple as 2D
+								mobile platformers or as complex as fully immersive VR experiences.
+							</p>
+							<ul class="actions stacked">
+								<li><a href="https://unity.com/" class="button">Learn More About Unity</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/unity.jpg" alt="Unity" />
+						</div>
+					</section>
+
+				<!-- Tech Used 2 -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center">
+						<div class="content">
+							<h2>GameObjects Created Using Blender</h2>
+							<p>Blender is an open-sourced 3D computer graphics software used for animation, visual FX,
+								art, 3D models, virtual reality, and video games. </p>
+							<ul class="actions stacked">
+								<li><a href="https://www.blender.org/" class="button">Learn More About Blender</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/blender.jpg" alt="Blender" />
+						</div>
+					</section>
+					
+				<!-- Tech Used 3 -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center">
+						<div class="content">
+							<h2>Integrated With OpenXR</h2>
+							<p>Open XR is an open-sourced plugin that allows development support for various augmented
+							and virtual reality head mounted displays. This includes integration for hardware
+							developed by HTC, Oculus, and more.</p>
+							<ul class="actions stacked">
+								<li><a href="https://www.khronos.org/openxr/" class="button">Learn More About
+									OpenXR</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/openXR.jpg" alt="Open XR" />
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center">
+						<div class="content">
+							<h2>Tested on Quest 2</h2>
+							<p>
+								The Meta Quest 2 (formerly known as Oculus) is a virtual reality platform that can
+								operate either as a standalone device using its onboard processor to run applications
+								or as a peripheral linked to a gaming PC. With a thriving community of developers and
+								cutting edge motion tracking, the Quest 2 offers everything a consumer enthusiast
+								could need.
+							</p>
+								<a href="https://store.facebook.com/quest/products/quest-2" class="button">Learn More
+								   About Meta Quest 2</a>
+						</div>
+						<div class="image">
+							<img src="images/quest2.jpg" alt="Meta Quest 2">
+						</div>
+					</section>
+
 				<!--To Do-->
 					<section class="spotlight style1 orient-center content-align-left" id="todo">
 						<div class="content">
@@ -400,23 +440,23 @@
 					</section>
 
 				<!-- Footer with CSUN copywrite and socials-->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://twitter.com/csunorthridge" class="icon brands style2 fa-twitter">
-									<span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/calstatenorthridge/" class="icon brands style2
-									fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/csun_edu/" class="icon brands style2
-									fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/school/california-state-university-northridge/"
-									class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span>
-									</a></li>
-							
-							</ul>
-							<p>&copy; Copyright California State University, Northridge</p>
-						</div>
-					</footer>
+<!--					<footer class="wrapper style1 align-center">-->
+<!--						<div class="inner">-->
+<!--							<ul class="icons">-->
+<!--								<li><a href="https://twitter.com/csunorthridge" class="icon brands style2 fa-twitter">-->
+<!--									<span class="label">Twitter</span></a></li>-->
+<!--								<li><a href="https://www.facebook.com/calstatenorthridge/" class="icon brands style2-->
+<!--									fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+<!--								<li><a href="https://www.instagram.com/csun_edu/" class="icon brands style2-->
+<!--									fa-instagram"><span class="label">Instagram</span></a></li>-->
+<!--								<li><a href="https://www.linkedin.com/school/california-state-university-northridge/"-->
+<!--									class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span>-->
+<!--									</a></li>-->
+<!--							-->
+<!--							</ul>-->
+<!--							<p>&copy; Copyright California State University, Northridge</p>-->
+<!--						</div>-->
+<!--					</footer>-->
 
 			</div>
 
